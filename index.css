@@ -1,0 +1,60 @@
+body {
+      text-align: center;
+      letter-spacing: 2px;
+      font-size: clamp(16px, 16px + 2vw, 32px);
+}
+
+.message {
+      margin: 1rem 0;
+}
+
+.game {
+      margin: 1rem 0;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+}
+
+.box {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      border-radius: 16px;
+      color: white;
+      cursor: pointer;
+}
+
+button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1.5rem;
+      border-radius: 0.6rem;
+      background-color: blueviolet;
+      color: white;
+      border: none;
+      cursor: pointer;
+}
+
+button:hover {
+      background-color: coral;
+}
+
+.hidden {
+      visibility: hidden;
+}
+
+@media only screen and (min-width: 500px){
+      .game {
+            grid-template-columns: repeat(2, 1fr);
+      }
+      .box {
+            height: 150px;
+      }
+}
+
+@media only screen and (min-width: 700px){
+      .game {
+            grid-template-columns: repeat(3, 1fr);
+      }
+}
